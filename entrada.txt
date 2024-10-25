@@ -1,0 +1,7 @@
+create grid infect 0.2 exposition 0.1 recover 0.05 mortality 0.01 immunity 0.02
+create subgrid I irow 2 icolumn 2 rows 5 columns 5
+create subgrid S irow 6 icolumn 7 rows 4 columns 3
+create subgrid R irow 11 icolumn 10 rows 2 columns 2
+print
+make simulation step
+make simulation step 8
