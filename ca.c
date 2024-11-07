@@ -345,9 +345,9 @@ int main() {
 
     // Establecer IDs para los autómatas
     establecer_id(matriz_automatas->matriz[0][0], 1);
-    establecer_id(matriz_automatas->matriz[0][1], 1);
-    establecer_id(matriz_automatas->matriz[1][0], 1);  // Mismo ID que el autómata (0,0)
-    establecer_id(matriz_automatas->matriz[1][1], 1);  // Mismo ID que el autómata (0,1)
+    establecer_id(matriz_automatas->matriz[0][1], 2);
+    establecer_id(matriz_automatas->matriz[1][0], 3);  // Mismo ID que el autómata (0,0)
+    establecer_id(matriz_automatas->matriz[1][1], 4);  // Mismo ID que el autómata (0,1)
 
     // Agregar áreas en los autómatas
     agregar_area(matriz_automatas->matriz[0][0], S, 0, 0, 5, 5);  // Todo 'S' en autómata (0,0)
