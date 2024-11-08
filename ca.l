@@ -7,7 +7,14 @@
 %%
 create     { return CREATE; }
 grid       { return GRID; }
-subgrid    { return SUBGRID; }
+grids      { return GRIDS; }
+id         { return ID; }
+m          { return M; }
+n          { return N; }
+set        { return SET; }
+area       { return AREA; }
+cells      { return CELLS; }
+all        { return ALL; }
 rows       { return ROWS; }
 columns    { return COLUMNS; }
 irow       { return IROW; }
@@ -16,15 +23,11 @@ print      { return PRINT; }
 make       { return MAKE; }
 simulation { return SIMULATION; }
 step       { return STEP; }
-exposition { return EXPOSITION; }
-infect     { return INFECT; }
-recover    { return RECOVER; }
-mortality  { return MORTALITY; }
-immunity   { return IMMUNITY; }
+release    { return RELEASE; }
+memory     { return MEMORY; }
 
 [0-9]+           { yylval.ival = atoi(yytext); return NUMBER; } 
-[0-9]+\.[0-9]+   { yylval.fval = atof(yytext); return NUMBERF; }  /* Para flotantes */
-[SIR]            { yylval.str = strdup(yytext); return STATE; }
+[SEIR]            { yylval.str = strdup(yytext); return STATE; }
 
 \n            { return ENDLINE; }
 [ \t]+        { /* Ignore whitespace */ }
