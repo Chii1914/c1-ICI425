@@ -27,7 +27,7 @@ release    { return RELEASE; }
 memory     { return MEMORY; }
 
 [0-9]+           { yylval.ival = atoi(yytext); return NUMBER; } 
-[SEIR]            { yylval.str = strdup(yytext); return STATE; }
+[SEIR]           { yylval.str = strdup(yytext); return STATE; }
 
 \n            { return ENDLINE; }
 [ \t]+        { /* Ignore whitespace */ }

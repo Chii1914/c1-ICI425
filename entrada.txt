@@ -8,11 +8,13 @@ set id 4 m 1 n 1
 print all id
 
 set area m 0 n 0 S irow 0 icolumn 0 rows 5 columns 5
-set area m 0 n 1 I irow 0 icolumn 0 rows 5 columns 5
-set area m 1 n 0 S irow 0 icolumn 0 rows 5 columns 5
+set area m 0 n 1 E irow 0 icolumn 0 rows 5 columns 5
+set area m 1 n 0 R irow 0 icolumn 0 rows 5 columns 5
 set area m 1 n 1 I irow 0 icolumn 0 rows 2 columns 2
 
 print grids
+
+make simulation step
 
 make simulation step 5
 

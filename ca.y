@@ -152,7 +152,7 @@ make:
     }
     | MAKE SIMULATION STEP NUMBER ENDLINE //avanzar "number" tiempos
     {
-        printf("\nAvanzar simulación un tiempo:\n");
+        printf("\nAvanzar simulación %d tiempos:\n", $4);
         avanzar_simulacion(matriz_automatas, $4);
         printf("\nResultados de la simulación:\n");
         mostrar_matriz_automatas(matriz_automatas);
